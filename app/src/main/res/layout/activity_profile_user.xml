@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_coordinator_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/user_photo_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_image_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_photo"/>
+
+            <android.support.v7.widget.Toolbar
+                app:theme="@style/ToolbarStyle"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/white"
+                app:layout_collapseMode="pin"
+                android:layout_marginTop="24dp"/>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/user_info_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_wrapper_height"
+        android:background="@color/grey_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_behavior=".ui.behaviors.UserInfoBehavior"
+        app:behavior_min_height="@dimen/size_medium">
+
+        <LinearLayout
+            style="@style/user_info_item"
+            android:layout_weight="0.25">
+
+            <TextView
+                android:id="@+id/user_info_rait_txt"
+                style="@style/user_info.value"
+                android:text="5"/>
+
+            <TextView
+                style="@style/user_info.hint"
+                android:text="Рейтинг"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_size"
+            android:layout_height="@dimen/spacing_larger"
+            android:background="@color/grey_light"/>
+
+        <LinearLayout
+            style="@style/user_info_item"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/user_info_code_lines_txt"
+                style="@style/user_info.value"
+                android:text="5"/>
+
+            <TextView
+                style="@style/user_info.hint"
+                android:text="Написано строк кода"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_size"
+            android:layout_height="@dimen/spacing_larger"
+            android:background="@color/grey_light"/>
+
+        <LinearLayout
+            style="@style/user_info_item"
+            android:layout_weight="0.25">
+
+            <TextView
+                android:id="@+id/user_info_project_txt"
+                style="@style/user_info.value"
+                android:text="5"/>
+
+            <TextView
+                style="@style/user_info.hint"
+                android:text="Проектов"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/static_profile_content"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

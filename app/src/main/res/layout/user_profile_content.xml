@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior=".ui.behaviors.CustomNestedScrollBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/ItemLayout">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_call_black_24dp"/>
+
+            <LinearLayout
+                style="@style/ItemDataLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/ItemEditText"
+                        android:id="@+id/phone_et"
+                        android:inputType="phone"
+                        android:hint="@string/hint_phone"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/call_img"
+                style="@style/icon.right"
+                android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/ItemBottomLine"/>
+
+
+
+
+        <LinearLayout
+            style="@style/ItemLayout">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_email_black_24dp"/>
+
+            <LinearLayout
+                style="@style/ItemDataLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/ItemEditText"
+                        android:id="@+id/email_et"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/hint_email"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/email_img"
+                style="@style/icon.right"
+                android:src="@drawable/ic_send_black_24dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/ItemBottomLine"/>
+
+
+
+
+        <LinearLayout
+            style="@style/ItemLayout">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_public_black_24dp"/>
+
+            <LinearLayout
+                style="@style/ItemDataLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/ItemEditText"
+                        android:id="@+id/vk_et"
+                        android:inputType="textWebEditText"
+                        android:hint="@string/hint_vk"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/vk_img"
+                style="@style/icon.right"
+                android:src="@drawable/ic_visibility_black_24dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/ItemBottomLine"/>
+
+
+
+
+        <LinearLayout
+            style="@style/ItemLayout">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_share_black_24dp"/>
+
+            <LinearLayout
+                style="@style/ItemDataLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/ItemEditText"
+                        android:id="@+id/git_et"
+                        android:inputType="textWebEditText"
+                        android:hint="@string/hint_git"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/git_img"
+                style="@style/icon.right"
+                android:src="@drawable/ic_visibility_black_24dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/ItemBottomLine"/>
+
+
+
+
+        <LinearLayout
+            style="@style/ItemLayout">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_account_circle_black_24dp"/>
+
+            <LinearLayout
+                style="@style/ItemDataLayout"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/bio_et"
+                        style="@style/ItemEditText"
+                        android:hint="@string/hint_bio"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
