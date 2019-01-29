@@ -1,11 +1,109 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="icon">
+        <item name="android:layout_width">@dimen/size_small</item>
+        <item name="android:layout_height">@dimen/size_small</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+    <style name="icon.left" parent="icon">
+        <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="icon.right" parent="icon">
+        <item name="android:layout_marginRight">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="ItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ItemDataLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/size_big</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_medium</item>
+        <item name="android:layout_marginRight">@dimen/spacing_normal</item>
+    </style>
+
+    <style name="ItemEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:enabled">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="ItemBottomLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_size</item>
+        <item name="android:background">@color/grey_light</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_larger</item>
+    </style>
+
+    <style name="custom_dialog">
+        <item name="android:fullDark">@android:color/transparent</item>
+    </style>
+
+    <style name="VerticalLine">
+        <item name="android:layout_width">@dimen/line_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/spacing_medial</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_medial</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="user_info_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="user_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-condensed</item>
+    </style>
+
+    <style name="user_info.value">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+
+    <style name="user_info.hint">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.Button.Red" parent="Base.Widget.AppCompat.Button">
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!-- ToolBar -->
+
+    <style name="ToolbarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
     </style>
 
 </resources>

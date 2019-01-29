@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Вася Пупкин</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_vk">Профиль в VK</string>
+    <string name="hint_git">Репозиторий</string>
+    <string name="hint_bio">О себе</string>
+    <string name="hint_phone">Мобильный</string>
+    <string name="user_profile.placeholder.image">Изменить фотографию профиля</string>
+    <string name="user_profile_dialog_gallery">Загрузить из галареи</string>
+    <string name="user_profile_dialog_camera">Сделать снимок</string>
+    <string name="user_profile_dialog_cancel">Отмена</string>
+    <string name="user_profile_dialog_title">Изменить фотографию профиля</string>
+    <string name="user_profile_chose_manager">Выберите фото</string>
+    <string name="request_permission_snackbar_hint">Для корректной работы приложения необходимо дать требуемые разрешения</string>
+
+    <string name="profile.bio.dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget fermentum enim, et pellentesque lectus. Suspendisse vel placerat felis.</string>
+
+    <string name="auth.authorization_enter">Войти</string>
+    <string name="auth.email">Введите e-mail</string>
+    <string name="auth.password">Введите пароль</string>
+    <string name="auth.login">Войти</string>
+    <string name="auth.remember">Забыли пароль?</string>
+
 </resources>

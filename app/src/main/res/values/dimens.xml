@@ -10,6 +10,13 @@
     <dimen name="size_medium">56dp</dimen>
     <dimen name="size_large">72dp</dimen>
 
+    <dimen name="size_big">110dp</dimen>
+    <dimen name="line_size">1dp</dimen>
+    <dimen name="profile_image_size">256dp</dimen>
+    <dimen name="info_wrapper_height">112dp</dimen>
+    <dimen name="placeholder_photo_size">90dp</dimen>
+    <dimen name="user_info_size">112dp</dimen>
+
     <!-- Spaces -->
 
     <dimen name="spacing_small">8dp</dimen>
@@ -18,5 +25,17 @@
     <dimen name="spacing_medium">32dp</dimen>
     <dimen name="spacing_large">56dp</dimen>
     <dimen name="spacing_larger">72dp</dimen>
+
+    <dimen name="fab_right_space">8dp</dimen>
+
+
+    <!-- Fonts -->
+
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_big">25sp</dimen>
+
+    <dimen name="font_large">24sp</dimen>
+    <dimen name="font_medium">20sp</dimen>
+    <dimen name="font_small">14sp</dimen>
 
 </resources>

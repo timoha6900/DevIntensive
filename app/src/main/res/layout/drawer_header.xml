@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:paddingTop="@dimen/spacing_medial"
+    android:paddingRight="@dimen/spacing_normal"
+    android:paddingLeft="@dimen/spacing_normal"
+    android:paddingBottom="@dimen/spacing_small"
+    android:background="@color/grey">
+
+    <ImageView
+        android:id="@+id/user_avatar_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/spacing_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_medium"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/user_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вася Пупкин"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/user_email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pupkin@ukr.net"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
